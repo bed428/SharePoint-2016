@@ -568,11 +568,11 @@ SharePoint Administrators
 
 
     # Send the email
-    #Send-MailMessage -To $msgTo -From $msgFrom -Subject $msgSubject -Body $msgBody -BodyAsHtml -Attachments $msgAttachment -SmtpServer $SmtpServer
+    Send-MailMessage -To $msgTo -From $msgFrom -Subject $msgSubject -Body $msgBody -BodyAsHtml -Attachments $msgAttachment -SmtpServer $SmtpServer
 
 
     # Clean up
-    #Remove-Item $msgAttachment
+    Remove-Item $msgAttachment
 }
 
 
